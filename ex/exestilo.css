@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-row: 50vh 50vh;
+    grid-template-areas: "p" "s" "t" "qa"
+                        "qi" "sx" "st";
+    background-color: aqua;
+}

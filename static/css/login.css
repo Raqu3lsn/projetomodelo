@@ -1,0 +1,93 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "h h"
+                         "l c"
+                         "f f";
+}
+
+header{
+  grid-area: h;
+  background-color: rgb(2, 2, 103);
+}
+
+footer{
+    grid-area: f;
+    background-color: rgb(2, 2, 103);
+}
+
+.lateral{
+  grid-area: l;
+  display: flex;
+  
+}
+.container{
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+form{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1vh;
+    background-color: rgb(123, 176, 255);
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgb(92, 109, 203);
+    border-radius: 8px;
+    padding: 20px
+}
+
+form>p{
+    display: flex;
+    flex-direction: column;
+}
+
+.bnt{
+    text-decoration: none;
+    background-color: rgba(0, 32, 103, 0.7);
+    color: white;
+    padding: 1vh;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.bnt{
+    text-decoration: none;
+    background-color: rgb(0, 22, 87);
+    color: white;
+    padding: 1vh;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.submit{
+    text-decoration: none;
+    background-color: rgb(48, 85, 197);
+    color: white;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 5px;
+    width:15vw ;
+    height: 3vh;
+}
+
+input[type="text"], [type="password"] {
+    background-color: rgb(48, 75, 210);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width:25vw ;
+    height: 3vh;
+}
